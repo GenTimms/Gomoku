@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ScappleDocument Version="1.1" ID="34DEE505-9498-4EB3-A784-D626284DE2A0">
+    <Notes>
+        <Note ID="9" FontSize="12.0" Position="308.893631,494.197562" Width="203.0" Shadow="Yes">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="2">0.065418 0.501815 0.251002</Border>
+            </Appearance>
+            <String>GridView
+
+1) Call tapHandler when tapped then update update display
+
+2) Draw board using boardState dimensions and board.get(at: Intersection)
+</String>
+            <ConnectedNoteIDs>13, 18, 20</ConnectedNoteIDs>
+            <PointsToNoteIDs>18, 20</PointsToNoteIDs>
+            <Formatting>
+                <FormatRange Bold="Yes" Underline="Yes">0,10</FormatRange>
+            </Formatting>
+        </Note>
+        <Note ID="10" FontSize="13.0" Position="1016.0,321.0" Width="219.0" Shadow="Yes">
+            <Appearance>
+                <Alignment>Center</Alignment>
+                <TextColor>0.999999 0.999974 0.999991</TextColor>
+                <Border Weight="1">0.0 0.0 0.0</Border>
+                <Fill>0.986246 0.007121 0.027434</Fill>
+            </Appearance>
+            <String>Game
+
+1) Stores &amp; Updates Current Player
+2) board.takeTurn(at: intersection)
+
+getBoard -&gt; BoardState
+getRules -&gt; Rules
+</String>
+            <ConnectedNoteIDs>11-13, 18</ConnectedNoteIDs>
+            <PointsToNoteIDs>11-12, 18</PointsToNoteIDs>
+            <Formatting>
+                <FormatRange Bold="Yes" Underline="Yes">0,4</FormatRange>
+                <FormatRange Bold="Yes">4,2</FormatRange>
+                <FormatRange Bold="Yes">40,1</FormatRange>
+            </Formatting>
+        </Note>
+        <Note ID="11" FontSize="12.0" Position="1181.673661,486.119764" Width="175.0" Shadow="Yes">
+            <Appearance>
+                <Alignment>Center</Alignment>
+                <Border Weight="2" Style="Jagged">0.991635 0.576933 0.033913</Border>
+            </Appearance>
+            <String>Board
+(Writing Interface)
+
+width / height
+takeTurn(at intersection, by: player)
+place(at intersection, by: player)
+</String>
+            <ConnectedNoteIDs>10, 17</ConnectedNoteIDs>
+            <Formatting>
+                <FormatRange Bold="Yes" Underline="Yes">0,26</FormatRange>
+                <FormatRange Bold="Yes">26,1</FormatRange>
+            </Formatting>
+        </Note>
+        <Note ID="12" FontSize="13.0" Position="1198.66386,164.788361" Width="158.0" Shadow="Yes">
+            <Appearance>
+                <Alignment>Center</Alignment>
+                <TextColor>0.999999 0.999974 0.999991</TextColor>
+                <Border Weight="1">0.0 0.0 0.0</Border>
+                <Fill>0.986246 0.007121 0.027434</Fill>
+            </Appearance>
+            <String>GameRules
+
+1) isWin(on board for player)
+</String>
+            <ConnectedNoteIDs>10</ConnectedNoteIDs>
+            <Formatting>
+                <FormatRange Bold="Yes" Underline="Yes">0,9</FormatRange>
+                <FormatRange Bold="Yes">9,2</FormatRange>
+            </Formatting>
+        </Note>
+        <Note ID="13" FontSize="12.0" Position="683.743856,164.779659" Width="90.0" Shadow="Yes">
+            <Appearance>
+                <Alignment>Center</Alignment>
+                <Border Weight="2" Style="Square">0.986246 0.007121 0.027434</Border>
+            </Appearance>
+            <String>View Controller</String>
+            <ConnectedNoteIDs>9-10, 14, 19-20</ConnectedNoteIDs>
+            <PointsToNoteIDs>9-10, 14, 19-20</PointsToNoteIDs>
+        </Note>
+        <Note ID="14" FontSize="12.0" Position="280.118443,280.984839" Width="73.0" Shadow="Yes">
+            <Appearance>
+                <Alignment>Center</Alignment>
+                <Border Weight="2">0.000111 0.00176 0.998218</Border>
+            </Appearance>
+            <String>Presenter</String>
+            <ConnectedNoteIDs>13</ConnectedNoteIDs>
+        </Note>
+        <Note ID="17" FontSize="13.0" Position="1054.0,699.0" Width="207.0" Shadow="Yes">
+            <Appearance>
+                <Alignment>Center</Alignment>
+                <TextColor>0.999999 0.999974 0.999991</TextColor>
+                <Border Weight="1">0.0 0.0 0.0</Border>
+                <Fill>0.986246 0.007121 0.027434</Fill>
+            </Appearance>
+            <String>Game Data
+
+let player
+let width / let height
+var placedStones = [Int: Player]
+</String>
+            <ConnectedNoteIDs>11, 18</ConnectedNoteIDs>
+            <PointsToNoteIDs>11, 18</PointsToNoteIDs>
+            <Formatting>
+                <FormatRange Bold="Yes" Underline="Yes">0,10</FormatRange>
+                <FormatRange Bold="Yes">10,1</FormatRange>
+                <FormatRange Bold="Yes">21,1</FormatRange>
+            </Formatting>
+        </Note>
+        <Note ID="18" FontSize="12.0" Position="914.0,512.0" Width="117.0" Shadow="Yes">
+            <Appearance>
+                <Alignment>Center</Alignment>
+                <Border Weight="2" Style="Jagged">0.991635 0.576933 0.033913</Border>
+            </Appearance>
+            <String>Board State
+(Reading Interface)
+
+width / height 
+get(at intersection)
+</String>
+            <ConnectedNoteIDs>9-10, 17</ConnectedNoteIDs>
+            <Formatting>
+                <FormatRange Bold="Yes" Underline="Yes">0,32</FormatRange>
+            </Formatting>
+        </Note>
+        <Note ID="19" FontSize="12.0" Position="339.930341,377.641155" Width="72.0" Shadow="Yes">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="2">0.065418 0.501815 0.251002</Border>
+            </Appearance>
+            <String>StatusLabel</String>
+            <ConnectedNoteIDs>13</ConnectedNoteIDs>
+        </Note>
+        <Note ID="20" FontSize="12.0" Position="620.0,367.0" Width="191.0" Shadow="Yes">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="2" Style="Jagged">0.0 0.648208 1.0</Border>
+            </Appearance>
+            <String>TapHandler
+
+1) game.takeTurn 
+2) game.isWinForPreviousPlayer?
+3) Update status label
+</String>
+            <ConnectedNoteIDs>9, 13</ConnectedNoteIDs>
+            <Formatting>
+                <FormatRange Bold="Yes" Underline="Yes">0,10</FormatRange>
+            </Formatting>
+        </Note>
+    </Notes>
+    <BackgroundShapes></BackgroundShapes>
+    <AutoFit>13, 18-20</AutoFit>
+    <NoteStyles>
+        <Style Name="API Class" ID="93C4664F-AF13-4E66-9EC1-9412E0484278" AffectFontStyle="Yes" AffectAlignment="Yes" AffectTextColor="Yes" AffectNoteBody="Yes" AffectSize="No" AffectFade="No" AffectSticky="Yes">
+            <FontSize>12.0</FontSize>
+            <Alignment>Left</Alignment>
+            <BorderThickness>2</BorderThickness>
+            <BorderColor>0.000111 0.00176 0.998218</BorderColor>
+            <Size>41.0,150.0</Size>
+            <Shadow>Yes</Shadow>
+        </Style>
+        <Style Name="Bubble (Blue)" ID="2F508C25-6FAA-4D4F-A78E-0ADEC031786A" AffectFontStyle="No" AffectAlignment="No" AffectTextColor="No" AffectNoteBody="Yes" AffectFade="No">
+            <BorderThickness>1</BorderThickness>
+            <BorderColor>0.561855 0.71062 0.779401</BorderColor>
+            <FillColor>0.702319 0.888276 0.974252</FillColor>
+        </Style>
+        <Style Name="Bubble (Blue)" ID="2F88600D-2C00-433C-8A8F-AC4404138B16" AffectFontStyle="No" AffectAlignment="No" AffectTextColor="No" AffectNoteBody="Yes" AffectFade="No">
+            <BorderThickness>1</BorderThickness>
+            <BorderColor>0.561855 0.71062 0.779401</BorderColor>
+            <FillColor>0.702319 0.888276 0.974252</FillColor>
+        </Style>
+        <Style Name="Bubble (Blue)" ID="A4A7195A-6B29-44E3-9829-F53163D1F9A9" AffectFontStyle="No" AffectAlignment="No" AffectTextColor="No" AffectNoteBody="Yes" AffectFade="No">
+            <BorderThickness>1</BorderThickness>
+            <BorderColor>0.561855 0.71062 0.779401</BorderColor>
+            <FillColor>0.702319 0.888276 0.974252</FillColor>
+        </Style>
+        <Style Name="Bubble (Green)" ID="2E4180B1-EB54-4949-93F5-BA64492FE3EF" AffectFontStyle="No" AffectAlignment="No" AffectTextColor="No" AffectNoteBody="Yes" AffectFade="No">
+            <BorderThickness>1</BorderThickness>
+            <BorderColor>0.572684 0.758969 0.558154</BorderColor>
+            <FillColor>0.715855 0.948712 0.697692</FillColor>
+        </Style>
+        <Style Name="Bubble (Green)" ID="EEF1E9D5-599D-4996-A4BD-306621CF9E77" AffectFontStyle="No" AffectAlignment="No" AffectTextColor="No" AffectNoteBody="Yes" AffectFade="No">
+            <BorderThickness>1</BorderThickness>
+            <BorderColor>0.572684 0.758969 0.558154</BorderColor>
+            <FillColor>0.715855 0.948712 0.697692</FillColor>
+        </Style>
+        <Style Name="Bubble (Green)" ID="C09B3119-D1E9-414E-B818-191A8F0A8860" AffectFontStyle="No" AffectAlignment="No" AffectTextColor="No" AffectNoteBody="Yes" AffectFade="No">
+            <BorderThickness>1</BorderThickness>
+            <BorderColor>0.572684 0.758969 0.558154</BorderColor>
+            <FillColor>0.715855 0.948712 0.697692</FillColor>
+        </Style>
+        <Style Name="Bubble (Pink)" ID="791C1DC1-9D28-4B35-B745-EFC637210A78" AffectFontStyle="No" AffectAlignment="No" AffectTextColor="No" AffectNoteBody="Yes" AffectFade="No">
+            <BorderThickness>1</BorderThickness>
+            <BorderColor>0.794796 0.560965 0.58607</BorderColor>
+            <FillColor>0.957566 0.766747 0.999616</FillColor>
+        </Style>
+        <Style Name="Bubble (Pink)" ID="4FBCD9D2-1BD7-4D22-9C0C-6E7616CD5D26" AffectFontStyle="No" AffectAlignment="No" AffectTextColor="No" AffectNoteBody="Yes" AffectFade="No">
+            <BorderThickness>1</BorderThickness>
+            <BorderColor>0.794796 0.560965 0.58607</BorderColor>
+            <FillColor>0.957566 0.766747 0.999616</FillColor>
+        </Style>
+        <Style Name="Bubble (Pink)" ID="1A4FC183-D069-4CEA-A43E-6B0CB910A4D6" AffectFontStyle="No" AffectAlignment="No" AffectTextColor="No" AffectNoteBody="Yes" AffectFade="No">
+            <BorderThickness>1</BorderThickness>
+            <BorderColor>0.794796 0.560965 0.58607</BorderColor>
+            <FillColor>0.957566 0.766747 0.999616</FillColor>
+        </Style>
+        <Style Name="Bubble (Red)" ID="25437E7B-84C6-494A-BF9B-3D4A8A555721" AffectFontStyle="No" AffectAlignment="No" AffectTextColor="No" AffectNoteBody="Yes" AffectFade="No">
+            <BorderThickness>1</BorderThickness>
+            <BorderColor>0.794796 0.560965 0.58607</BorderColor>
+            <FillColor>0.993495 0.701207 0.732587</FillColor>
+        </Style>
+        <Style Name="Bubble (Red)" ID="0A850F10-B291-4CA7-B950-731C91DCAAC3" AffectFontStyle="No" AffectAlignment="No" AffectTextColor="No" AffectNoteBody="Yes" AffectFade="No">
+            <BorderThickness>1</BorderThickness>
+            <BorderColor>0.794796 0.560965 0.58607</BorderColor>
+            <FillColor>0.993495 0.701207 0.732587</FillColor>
+        </Style>
+        <Style Name="Bubble (Red)" ID="7F57A2AE-E1C9-4DB2-9B85-C47115074606" AffectFontStyle="No" AffectAlignment="No" AffectTextColor="No" AffectNoteBody="Yes" AffectFade="No">
+            <BorderThickness>1</BorderThickness>
+            <BorderColor>0.794796 0.560965 0.58607</BorderColor>
+            <FillColor>0.993495 0.701207 0.732587</FillColor>
+        </Style>
+        <Style Name="Bubble (Yellow)" ID="59A0D539-C58F-48D5-904B-E9D06900B65B" AffectFontStyle="No" AffectAlignment="No" AffectTextColor="No" AffectNoteBody="Yes" AffectFade="No">
+            <BorderThickness>1</BorderThickness>
+            <BorderColor>0.798177 0.714184 0.522055</BorderColor>
+            <FillColor>0.997722 0.89273 0.652569</FillColor>
+        </Style>
+        <Style Name="Bubble (Yellow)" ID="9E2AD9D7-B31D-458B-9DF7-3CADFDA3CAE9" AffectFontStyle="No" AffectAlignment="No" AffectTextColor="No" AffectNoteBody="Yes" AffectFade="No">
+            <BorderThickness>1</BorderThickness>
+            <BorderColor>0.798177 0.714184 0.522055</BorderColor>
+            <FillColor>0.997722 0.89273 0.652569</FillColor>
+        </Style>
+        <Style Name="Bubble (Yellow)" ID="129FF76E-0539-4C28-A255-FD3AA5068AC2" AffectFontStyle="No" AffectAlignment="No" AffectTextColor="No" AffectNoteBody="Yes" AffectFade="No">
+            <BorderThickness>1</BorderThickness>
+            <BorderColor>0.798177 0.714184 0.522055</BorderColor>
+            <FillColor>0.997722 0.89273 0.652569</FillColor>
+        </Style>
+        <Style Name="Closure" ID="B3641FAB-17AD-4C22-AF65-97F543B2D5E1" AffectFontStyle="Yes" AffectAlignment="Yes" AffectTextColor="Yes" AffectNoteBody="Yes" AffectSize="No" AffectFade="No" AffectSticky="Yes">
+            <FontSize>12.0</FontSize>
+            <Alignment>Center</Alignment>
+            <BorderThickness>2</BorderThickness>
+            <BorderStyle>Jagged</BorderStyle>
+            <BorderColor>0.0 0.648208 1.0</BorderColor>
+            <Size>92.0,150.0</Size>
+            <Shadow>Yes</Shadow>
+        </Style>
+        <Style Name="Details" ID="4A4788AF-2529-4117-BA4F-8F7702EB926D" AffectFontStyle="Yes" AffectAlignment="Yes" AffectTextColor="Yes" AffectNoteBody="Yes" AffectSize="No" AffectFade="No" AffectSticky="Yes">
+            <FontSize>12.0</FontSize>
+            <Alignment>Left</Alignment>
+            <BorderThickness>1</BorderThickness>
+            <BorderStyle>Cloud</BorderStyle>
+            <Size>200.0,150.0</Size>
+        </Style>
+        <Style Name="Enum" ID="322ACF75-F978-4649-A606-8454C128A113" AffectFontStyle="Yes" AffectAlignment="Yes" AffectTextColor="Yes" AffectNoteBody="Yes" AffectSize="No" AffectFade="No" AffectSticky="Yes">
+            <FontSize>12.0</FontSize>
+            <Alignment>Left</Alignment>
+            <BorderThickness>2</BorderThickness>
+            <BorderColor>0.481295 0.0 0.998449</BorderColor>
+            <Size>200.0,150.0</Size>
+            <Shadow>Yes</Shadow>
+        </Style>
+        <Style Name="Function" ID="B5EF20C6-4D4E-4D39-BF6E-471DCE525DBC" AffectFontStyle="Yes" AffectAlignment="Yes" AffectTextColor="Yes" AffectNoteBody="Yes" AffectSize="No" AffectFade="No" AffectSticky="Yes">
+            <FontSize>12.0</FontSize>
+            <Alignment>Left</Alignment>
+            <BorderThickness>2</BorderThickness>
+            <BorderColor>0.062641 0.50329 0.718373</BorderColor>
+            <Size>405.0,150.0</Size>
+            <Shadow>Yes</Shadow>
+        </Style>
+        <Style Name="Model" ID="E5A2C7B0-8FE7-439D-B723-0DA94365BF07" AffectFontStyle="Yes" AffectAlignment="Yes" AffectTextColor="Yes" AffectNoteBody="Yes" AffectSize="Yes" AffectFade="No" AffectSticky="Yes">
+            <FontSize>13.0</FontSize>
+            <Alignment>Center</Alignment>
+            <TextColor>0.999999 0.999974 0.999991</TextColor>
+            <BorderThickness>1</BorderThickness>
+            <BorderColor>0.0 0.0 0.0</BorderColor>
+            <FillColor>0.986246 0.007121 0.027434</FillColor>
+            <Size>60.0,150.0</Size>
+            <Shadow>Yes</Shadow>
+            <IsBold>Yes</IsBold>
+        </Style>
+        <Style Name="Protocol" ID="28F50944-210A-4649-9003-1D6497BE1C09" AffectFontStyle="Yes" AffectAlignment="Yes" AffectTextColor="Yes" AffectNoteBody="Yes" AffectSize="No" AffectFade="No" AffectSticky="Yes">
+            <FontSize>12.0</FontSize>
+            <Alignment>Left</Alignment>
+            <BorderThickness>2</BorderThickness>
+            <BorderStyle>Jagged</BorderStyle>
+            <BorderColor>0.991635 0.576933 0.033913</BorderColor>
+            <Size>147.0,150.0</Size>
+            <Shadow>Yes</Shadow>
+        </Style>
+        <Style Name="Queue" ID="FF22ACE0-0075-44C0-ADD4-8046DE9B9E0C" AffectFontStyle="Yes" AffectAlignment="Yes" AffectTextColor="Yes" AffectNoteBody="Yes" AffectSize="No" AffectFade="No" AffectSticky="Yes">
+            <FontSize>12.0</FontSize>
+            <Alignment>Center</Alignment>
+            <BorderThickness>2</BorderThickness>
+            <BorderColor>0.593415 0.0 0.870603</BorderColor>
+            <FillColor>0.948401 0.876722 1.0</FillColor>
+            <Size>114.0,150.0</Size>
+            <IsBold>Yes</IsBold>
+        </Style>
+        <Style Name="Red Text" ID="C8529EC7-3D20-420E-8339-37640C43C4B5" AffectFontStyle="No" AffectAlignment="No" AffectTextColor="Yes" AffectNoteBody="No" AffectFade="No">
+            <TextColor>0.985948 0.0 0.026951</TextColor>
+        </Style>
+        <Style Name="Red Text" ID="89E11839-EEB4-4F04-8016-20F21515390C" AffectFontStyle="No" AffectAlignment="No" AffectTextColor="Yes" AffectNoteBody="No" AffectFade="No">
+            <TextColor>0.985948 0.0 0.026951</TextColor>
+        </Style>
+        <Style Name="Red Text" ID="7641F8F3-AFBA-4F3B-A1BC-854FDE5D55FE" AffectFontStyle="No" AffectAlignment="No" AffectTextColor="Yes" AffectNoteBody="No" AffectFade="No">
+            <TextColor>0.985948 0.0 0.026951</TextColor>
+        </Style>
+        <Style Name="Static Instance" ID="5156BF7C-34B1-4B2B-8F07-FF3B332B4AAB" AffectFontStyle="Yes" AffectAlignment="Yes" AffectTextColor="Yes" AffectNoteBody="Yes" AffectSize="No" AffectFade="No" AffectSticky="Yes">
+            <FontSize>12.0</FontSize>
+            <Alignment>Center</Alignment>
+            <BorderThickness>2</BorderThickness>
+            <BorderColor>0.000111 0.00176 0.998218</BorderColor>
+            <FillColor>0.852922 0.872742 0.999575</FillColor>
+            <Size>168.0,150.0</Size>
+            <Shadow>Yes</Shadow>
+            <IsBold>Yes</IsBold>
+        </Style>
+        <Style Name="Title Text" ID="8100E4AB-C1EA-4646-A53C-0285945CEB72" AffectFontStyle="Yes" AffectAlignment="Yes" AffectTextColor="No" AffectNoteBody="No" AffectFade="No">
+            <FontSize>28.0</FontSize>
+            <IsBold>Yes</IsBold>
+        </Style>
+        <Style Name="Title Text" ID="B5C68A6F-8A18-46F2-A21B-44C7BDB8DFD5" AffectFontStyle="Yes" AffectAlignment="Yes" AffectTextColor="No" AffectNoteBody="No" AffectFade="No">
+            <FontSize>28.0</FontSize>
+            <IsBold>Yes</IsBold>
+        </Style>
+        <Style Name="Title Text" ID="B9AED37C-F683-467A-86F1-FF3554E3FEAD" AffectFontStyle="Yes" AffectAlignment="Yes" AffectTextColor="No" AffectNoteBody="No" AffectFade="No">
+            <FontSize>28.0</FontSize>
+            <IsBold>Yes</IsBold>
+        </Style>
+        <Style Name="View" ID="CD445684-7224-4C1E-93E9-A3E8C9DC3079" AffectFontStyle="Yes" AffectAlignment="Yes" AffectTextColor="Yes" AffectNoteBody="Yes" AffectSize="No" AffectFade="No" AffectSticky="Yes">
+            <FontSize>12.0</FontSize>
+            <Alignment>Left</Alignment>
+            <BorderThickness>2</BorderThickness>
+            <BorderColor>0.065418 0.501815 0.251002</BorderColor>
+            <Size>106.0,150.0</Size>
+            <Shadow>Yes</Shadow>
+        </Style>
+        <Style Name="View Controller" ID="7B9CFA80-F2F3-4FF7-8B9C-0B9FEF2EFD56" AffectFontStyle="Yes" AffectAlignment="Yes" AffectTextColor="Yes" AffectNoteBody="Yes" AffectSize="No" AffectFade="No" AffectSticky="Yes">
+            <FontSize>12.0</FontSize>
+            <Alignment>Left</Alignment>
+            <BorderThickness>2</BorderThickness>
+            <BorderStyle>Square</BorderStyle>
+            <BorderColor>0.986246 0.007121 0.027434</BorderColor>
+            <Size>401.0,150.0</Size>
+            <Shadow>Yes</Shadow>
+        </Style>
+    </NoteStyles>
+    <UISettings>
+        <BackgroundColor>0.999767 0.98837 0.949907</BackgroundColor>
+        <DefaultFont>Helvetica</DefaultFont>
+        <DefaultTextColor>0.0 0.0 0.0</DefaultTextColor>
+    </UISettings>
+    <PrintSettings PaperSize="595.0,842.0" LeftMargin="72.0" RightMargin="72.0" TopMargin="90.0" BottomMargin="90.0" PaperType="iso-a4" Orientation="Portrait" HorizontalPagination="Clip" VerticalPagination="Auto" ScaleFactor="1.0" HorizontallyCentered="Yes" VerticallyCentered="Yes" Collates="Yes" PagesAcross="1" PagesDown="1"></PrintSettings>
+</ScappleDocument>
